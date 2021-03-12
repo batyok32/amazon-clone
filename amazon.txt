@@ -1,0 +1,78 @@
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.2.10/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.2.10/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
+divide an app into components: Header and rest one is Home
+make your Header
+and home
+build your Product.js
+install react-router-dom
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
+npm i react-currency-format >> render money
+
+context api
+
+create stateprovider.js
+paste a snippet
+create reducer
+and look at last reducer that you made for another projects
+and make it like that
+go to product.js and add a function addToBasket
+>> that will dispatch all info about product to context api
+and type of this dispatch
+
+
+login 
+crete login.js
+go to firebase and enable signinwith email and password
+go to firebase.js and export auth and db
+go to app.js and make a listener of auth user
+go to login js and make functionality of login and register
+
+npm i react-slick
+npm install slick-carousel
+// Import css files
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import Slider from "react-slick";
+
+export default function SimpleSlider() {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  };
+  return (
+    <Slider {...settings}>
+      <div>
+        <h3>1</h3>
+      </div>
+      <div>
+        <h3>2</h3>
+      </div>
+      <div>
+        <h3>3</h3>
+      </div>
+      <div>
+        <h3>4</h3>
+      </div>
+      <div>
+        <h3>5</h3>
+      </div>
+      <div>
+        <h3>6</h3>
+      </div>
+    </Slider>
+  );
+}
+
+npm i moment
